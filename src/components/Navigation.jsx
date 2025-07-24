@@ -1,6 +1,6 @@
 import React from 'react'
 import '../index.css'
-import Resume from '/portfolio/assets/Resume.pdf'
+import Resume from '../assets/Resume.pdf'
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { useState } from 'react';
