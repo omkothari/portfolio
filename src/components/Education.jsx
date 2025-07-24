@@ -25,7 +25,7 @@ const Education = () => {
 
 
   return (
-    <div className='px-8'>
+    <div id='education' className='px-8'>
         <h1 className='text-2xl font-bold mt-30 mb-10'>
             Education
         </h1>

@@ -26,23 +26,17 @@ const Projects = () => {
 
 
   return (
-    <div className='px-8'>
+    <div id="projects" className='px-8'>
         <h1 className="text-2xl font-bold mt-30 mb-10">
         Projects
         </h1>
 
-        <div className='box h-100 flex gap-10 '>
+        <div className='box min-h-[40vh] w-full flex shrink-0 gap-10 overflow-x-auto'>
 
             {projects.map((project, index) => (
-                 <div className="h-[90%] w-[30vw] shrink-0 rounded-md gap-4" key={index}>
-                {/* <div className="img bg-white w-[40%] h-50"></div>
-                <div className="w-[50%] bg-red-400 h-50">
-                    <h2 className="font-bold">Project Title</h2>
-                    <p className="text-sm">Project description goes here.</p>
-                </div>                 */}
-
-                <div className="img bg-white w-full h-[80%] rounded-lg overflow-hidden hover:scale-105 hover:mb-2 transition-all duration-300">
-                    <img src={project.image} className={`object-cover ${index==2 ?"object-center":"object-left"} w-full h-full`} alt="" />
+                 <div className=" min-w-[60vh] w-[40vw] bg-black rounded-md gap-4 shrink-0" key={index}>
+                <div className="img bg-white w-full h-full rounded-lg overflow-hidden hover:scale-105 hover:mb-2 transition-all duration-300">
+                    <img src={project.image} className={`object-contain w-full h-full`} alt="" />
                 </div>
                 <h1 className="text-lg font-bold text-[#222222]">{project.heading}</h1>
             </div>

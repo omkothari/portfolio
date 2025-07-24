@@ -1,12 +1,12 @@
 import React from 'react'
-import Resume from '../assets/resume.pdf'
+import Resume from '../assets/Resume.pdf'
 const Contacts = () => {
 
 
      let data = ["Home", "About", "Resume","Projects"];
           
   return (
-    <div className='h-50 bg-[#222222] flex justify-between items-center md:px-20'>
+    <div id='contact' className='h-50 bg-[#222222] flex justify-between items-center md:px-20'>
         {/* <h1 className='text-2xl font-bold mt-30 mx-20'>
             Contact Me 
         </h1> */}
@@ -17,7 +17,7 @@ const Contacts = () => {
               
               {index===2 ?  <a href={Resume} download="Om_Kothari_Resume.pdf" className=" block px-2 py-1 rounded-md">
                           {item}
-                          </a>:  <a href="" className=" block px-2 py-1 rounded-md">
+                          </a>:  <a href={`#${item.toLowerCase()}`} className=" block px-2 py-1 rounded-md">
                           {item}
                           </a> }
 
